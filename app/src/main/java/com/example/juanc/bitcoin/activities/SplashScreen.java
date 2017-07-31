@@ -1,4 +1,4 @@
-package com.example.juanc.bitcoin;
+package com.example.juanc.bitcoin.Modelo;
 
 import android.content.Intent;
 import android.os.CountDownTimer;
@@ -6,10 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ProgressBar;
 
+import com.example.juanc.bitcoin.R;
+
 public class SplashScreen extends AppCompatActivity {
 
     /*Designación de variables*/
-    public static final int segundos = 8;
+    public static final int segundos = 5;
     public static final int milisegundos = segundos * 1000;
     private ProgressBar pbProgreso;
     public static final int regresar = 2;
@@ -35,7 +37,7 @@ public class SplashScreen extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                Intent intent = new Intent(SplashScreen.this, Inicio.class);
+                Intent intent = new Intent(SplashScreen.this, MapsActivity.class);
                 startActivity(intent);
                 finish();
 
